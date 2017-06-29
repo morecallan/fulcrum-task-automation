@@ -27,7 +27,9 @@ app.post('*', (req, res) => {
   serialNum = serialNum.split(/\r?\n/)
 
   if (authCode.length === serialNum.length) {
-
+    for (var i = 0; i < authCode.length; i++) {
+      
+    }
   } else {
     res.status(500).send("Enter 100 of each.")
   }
